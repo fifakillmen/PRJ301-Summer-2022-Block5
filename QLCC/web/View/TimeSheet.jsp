@@ -19,54 +19,17 @@
         <table class="table table-bordered table-striped" style="font-size: 12px; text-align:center">
             <tbody>
                 <tr>
-                    <td colspan="36" width="1020">BẢNG CHẤM C&Ocirc;NG</td>
+                    <td colspan="36" width="1020">BẢNG CHẤM CÔNG</td>
                 </tr>
                 <tr>
-                    <td colspan="36">Th&aacute;ng 07 năm 2022</td>
+                    <td colspan="36">Tháng 07 năm 2022</td>
                 </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
+
                 <tr>
                     <td rowspan="2">TT</td>
-                    <td rowspan="2">Họ v&agrave; t&ecirc;n</td>
-                    <td colspan="31">Ng&agrave;y trong th&aacute;ng</td>
-                    <td colspan="3">Quy ra c&ocirc;ng</td>
+                    <td rowspan="2">Họ và tên</td>
+                    <td colspan="31">Ngày trong tháng</td>
+                    <td colspan="3">Quy ra công</td>
                 </tr>
                 <tr>
                     <td>1</td>

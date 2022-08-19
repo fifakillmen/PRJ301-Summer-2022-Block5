@@ -23,9 +23,7 @@
             <tr>
                 <td colspan="37">Th&aacute;ng 07 năm 2022</td>
             </tr>
-            <tr>
-                <td colspan="37">&nbsp;</td>
-            </tr>
+           
             <tr>
                 <td rowspan="2">TT</td>
                 <td rowspan="2">Họ v&agrave; t&ecirc;n</td>
