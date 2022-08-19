@@ -13,367 +13,466 @@
         <title>JSP Page</title>
     </head>
     <div>
-        <table style="width: 1609px; height: 302px;">
-            <thead>
-                <tr style="height: 25px;">
-                    <th style="width: 90px; height: 50px;" rowspan="2"><span class="auto-style1"><strong>Year</strong></span><select id="ctl00_mainContent_drpYear" name="ctl00$mainContent$drpYear" onchange="javascript:setTimeout('__doPostBack(\'ctl00$mainContent$drpYear\',\'\')', 0)">
-                            <option value="2019">2019</option>
-                            <option value="2020">2020</option>
-                            <option value="2021">2021</option>
-                            <option selected="selected" value="2022">2022</option>
-                            <option value="2023">2023</option>
-                        </select><br />Month<select>
-                            <option value="1">January</option>
-                            <option value="2">February</option>
-                            <option value="3">March</option>
-                            <option value="4">April</option>
-                            <option value="5">May</option>
-                            <option value="6">June</option>
-                            <option selected="selected" value="7">July</option>
-                            <option value="8">August</option>
-                            <option value="9">September</option>
-                            <option value="10">October</option>
-                            <option value="11">November</option>
-                            <option value="12">December</option>
-                        </select></th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Fri</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Sat</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Sun</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Mon</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Tue</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Wed</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Thu</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Fri</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Sat</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Sun</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Mon</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Tue</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Wed</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Thu</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Fri</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Sat</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Sun</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Mon</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Tue</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Wed</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Thu</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Fri</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Sat</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Sun</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Mon</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Tue</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Wed</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Thu</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Fri</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Sat</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">Sun</th>
-                </tr>
-                <tr style="height: 25px;">
-                    <th style="width: 49.4792px; height: 25px;" align="center">01/08</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">02/08</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">03/08</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">04/08</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">05/08</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">06/08</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">07/08</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">08/08</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">09/08</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">10/08</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">11/08</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">12/08</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">13/08</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">14/08</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">15/08</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">16/08</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">17/08</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">18/08</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">19/08</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">20/08</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">21/08</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">22/08</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">23/08</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">24/08</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">25/08</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">26/08</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">27/08</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">28/08</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">29/08</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">30/08</th>
-                    <th style="width: 49.4792px; height: 25px;" align="center">31/08</th>
-                </tr>
-            </thead>
+        <table style="margin-left: auto; margin-right: auto; height: 504px;" width="1020">
             <tbody>
                 <tr style="height: 18px;">
-                    <td style="width: 90px; height: 18px;">B&ugrave;i Ngọc Dương</td>
-                    <td style="width: 49.4792px; text-align: center; height: 18px;">+</td>
-                    <td style="width: 49.4792px; text-align: center; height: 18px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 18px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">NT</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 18px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 18px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 18px;">NT</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 18px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">NT</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 18px;">&nbsp;</td>
+                    <td style="width: 20.3125px; text-align: center; height: 108px;" rowspan="2">TT</td>
+                    <td style="width: 77.0139px; text-align: center; height: 108px;" rowspan="2">Họ v&agrave; t&ecirc;n</td>
+                    <td style="width: 751.476px; text-align: center; height: 18px;" colspan="31">Ng&agrave;y trong th&aacute;ng</td>
+                    <td style="width: 146.615px; text-align: center; height: 18px;" colspan="3">Quy ra c&ocirc;ng</td>
                 </tr>
-                <tr style="height: 36px;">
-                    <td style="width: 90px; height: 36px;">B&ugrave;i Thị Thu Huyền</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">NT</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">NT</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">NT</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
+                <tr style="text-align: center;">
+                    <td style="width: 20.3125px; height: 90px;">1</td>
+                    <td style="width: 10.1736px; height: 90px;">2</td>
+                    <td style="width: 10.1736px; height: 90px;">3</td>
+                    <td style="width: 20.3125px; height: 90px;">4</td>
+                    <td style="width: 20.3125px; height: 90px;">5</td>
+                    <td style="width: 20.3125px; height: 90px;">6</td>
+                    <td style="width: 20.3125px; height: 90px;">7</td>
+                    <td style="width: 20.3125px; height: 90px;">8</td>
+                    <td style="width: 10.1736px; height: 90px;">9</td>
+                    <td style="width: 19.2882px; height: 90px;">10</td>
+                    <td style="width: 20.3125px; height: 90px;">11</td>
+                    <td style="width: 20.3125px; height: 90px;">12</td>
+                    <td style="width: 20.3125px; height: 90px;">13</td>
+                    <td style="width: 20.3125px; height: 90px;">14</td>
+                    <td style="width: 20.3125px; height: 90px;">15</td>
+                    <td style="width: 19.2882px; height: 90px;">16</td>
+                    <td style="width: 19.2882px; height: 90px;">17</td>
+                    <td style="width: 20.3125px; height: 90px;">18</td>
+                    <td style="width: 20.3125px; height: 90px;">19</td>
+                    <td style="width: 20.3125px; height: 90px;">20</td>
+                    <td style="width: 20.3125px; height: 90px;">21</td>
+                    <td style="width: 20.3125px; height: 90px;">22</td>
+                    <td style="width: 19.2882px; height: 90px;">23</td>
+                    <td style="width: 19.2882px; height: 90px;">24</td>
+                    <td style="width: 20.3125px; height: 90px;">25</td>
+                    <td style="width: 20.3125px; height: 90px;">26</td>
+                    <td style="width: 20.3125px; height: 90px;">27</td>
+                    <td style="width: 20.3125px; height: 90px;">28</td>
+                    <td style="width: 20.3125px; height: 90px;">29</td>
+                    <td style="width: 19.2882px; height: 90px;">30</td>
+                    <td style="width: 19.2882px; height: 90px;">31</td>
+                    <td style="width: 45.625px; height: 90px;">SC hưởng lương<br />&nbsp;thời <br />gian</td>
+                    <td style="width: 44.6007px; height: 90px;">SC<br />&nbsp;nghỉ<br />kh&ocirc;ng<br />lương</td>
+                    <td style="width: 45.7639px; height: 90px;">SC<br />hưởng <br />BHXH</td>
                 </tr>
-                <tr style="height: 36px;">
-                    <td style="width: 90px; height: 36px;">Phan Thị Kiều Oanh</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">NT</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">NT</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
+                <tr style="text-align: center;">
+                    <td style="width: 20.3125px; height: 36px;">1</td>
+                    <td style="width: 77.0139px; height: 36px;">B&ugrave;i Ngọc Dương</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 10.1736px; height: 36px;">&nbsp;</td>
+                    <td style="width: 10.1736px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">NT</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 10.1736px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">NT</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">NT</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 45.625px; height: 36px;">21</td>
+                    <td style="width: 44.6007px; height: 36px;">&nbsp;</td>
+                    <td style="width: 45.7639px; height: 36px;">&nbsp;</td>
                 </tr>
-                <tr style="height: 36px;">
-                    <td style="width: 90px; height: 36px;">Nguyễn Thị Hiền</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">NT</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">NT</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
+                <tr style="text-align: center;">
+                    <td style="width: 20.3125px; height: 54px;">2</td>
+                    <td style="width: 77.0139px; height: 54px;">B&ugrave;i Thị Thu Huyền</td>
+                    <td style="width: 20.3125px; height: 54px;">+</td>
+                    <td style="width: 10.1736px; height: 54px;">&nbsp;</td>
+                    <td style="width: 10.1736px; height: 54px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 54px;">+</td>
+                    <td style="width: 20.3125px; height: 54px;">+</td>
+                    <td style="width: 20.3125px; height: 54px;">+</td>
+                    <td style="width: 20.3125px; height: 54px;">+</td>
+                    <td style="width: 20.3125px; height: 54px;">NT</td>
+                    <td style="width: 10.1736px; height: 54px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 54px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 54px;">+</td>
+                    <td style="width: 20.3125px; height: 54px;">+</td>
+                    <td style="width: 20.3125px; height: 54px;">NT</td>
+                    <td style="width: 20.3125px; height: 54px;">+</td>
+                    <td style="width: 20.3125px; height: 54px;">+</td>
+                    <td style="width: 19.2882px; height: 54px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 54px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 54px;">+</td>
+                    <td style="width: 20.3125px; height: 54px;">+</td>
+                    <td style="width: 20.3125px; height: 54px;">+</td>
+                    <td style="width: 20.3125px; height: 54px;">+</td>
+                    <td style="width: 20.3125px; height: 54px;">+</td>
+                    <td style="width: 19.2882px; height: 54px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 54px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 54px;">+</td>
+                    <td style="width: 20.3125px; height: 54px;">NT</td>
+                    <td style="width: 20.3125px; height: 54px;">+</td>
+                    <td style="width: 20.3125px; height: 54px;">+</td>
+                    <td style="width: 20.3125px; height: 54px;">+</td>
+                    <td style="width: 19.2882px; height: 54px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 54px;">&nbsp;</td>
+                    <td style="width: 45.625px; height: 54px;">21</td>
+                    <td style="width: 44.6007px; height: 54px;">&nbsp;</td>
+                    <td style="width: 45.7639px; height: 54px;">&nbsp;</td>
                 </tr>
-                <tr style="height: 36px;">
-                    <td style="width: 90px; height: 36px;">Trần Thị Minh T&acirc;m</td>
-                    <td style="width: 49.4792px; height: 36px;">NT</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">NT</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
+                <tr style="text-align: center;">
+                    <td style="width: 20.3125px; height: 36px;">3</td>
+                    <td style="width: 77.0139px; height: 36px;">Phan Thị Kiều Oanh</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 10.1736px; height: 36px;">&nbsp;</td>
+                    <td style="width: 10.1736px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 10.1736px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">NT</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">NT</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 45.625px; height: 36px;">21</td>
+                    <td style="width: 44.6007px; height: 36px;">&nbsp;</td>
+                    <td style="width: 45.7639px; height: 36px;">&nbsp;</td>
                 </tr>
-                <tr style="height: 18px;">
-                    <td style="width: 90px; height: 18px;">Trần Thị Hoa</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 18px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">NT</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 18px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 18px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">NT</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 18px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">+</td>
-                    <td style="width: 49.4792px; height: 18px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 18px;">&nbsp;</td>
+                <tr style="text-align: center;">
+                    <td style="width: 20.3125px; height: 36px;">4</td>
+                    <td style="width: 77.0139px; height: 36px;">Nguyễn Thị Hiền</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 10.1736px; height: 36px;">&nbsp;</td>
+                    <td style="width: 10.1736px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">NT</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 10.1736px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">NT</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 45.625px; height: 36px;">21</td>
+                    <td style="width: 44.6007px; height: 36px;">&nbsp;</td>
+                    <td style="width: 45.7639px; height: 36px;">&nbsp;</td>
                 </tr>
-                <tr style="height: 36px;">
-                    <td style="width: 90px; height: 36px;">B&ugrave;i Trọng Đại</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
+                <tr style="text-align: center;">
+                    <td style="width: 20.3125px; height: 36px;">5</td>
+                    <td style="width: 77.0139px; height: 36px;">Trần Thị Minh T&acirc;m</td>
+                    <td style="width: 20.3125px; height: 36px;">NT</td>
+                    <td style="width: 10.1736px; height: 36px;">&nbsp;</td>
+                    <td style="width: 10.1736px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 10.1736px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">NT</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 45.625px; height: 36px;">21</td>
+                    <td style="width: 44.6007px; height: 36px;">&nbsp;</td>
+                    <td style="width: 45.7639px; height: 36px;">&nbsp;</td>
                 </tr>
-                <tr style="height: 36px;">
-                    <td style="width: 90px; height: 36px;">Nguyễn Thị Y Ly</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">NT</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">NT</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">NT</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">+</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
-                    <td style="width: 49.4792px; height: 36px;">&nbsp;</td>
+                <tr style="text-align: center;">
+                    <td style="width: 20.3125px; height: 36px;">6</td>
+                    <td style="width: 77.0139px; height: 36px;">Trần Thị Hoa</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 10.1736px; height: 36px;">&nbsp;</td>
+                    <td style="width: 10.1736px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">NT</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 10.1736px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">NT</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 45.625px; height: 36px;">21</td>
+                    <td style="width: 44.6007px; height: 36px;">&nbsp;</td>
+                    <td style="width: 45.7639px; height: 36px;">&nbsp;</td>
+                </tr>
+                <tr style="text-align: center;">
+                    <td style="width: 20.3125px; height: 36px;">7</td>
+                    <td style="width: 77.0139px; height: 36px;">B&ugrave;i Trọng Đại</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 10.1736px; height: 36px;">&nbsp;</td>
+                    <td style="width: 10.1736px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 10.1736px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">NT</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">NT</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 45.625px; height: 36px;">21</td>
+                    <td style="width: 44.6007px; height: 36px;">&nbsp;</td>
+                    <td style="width: 45.7639px; height: 36px;">&nbsp;</td>
+                </tr>
+                <tr style="text-align: center;">
+                    <td style="width: 20.3125px; height: 36px;">8</td>
+                    <td style="width: 77.0139px; height: 36px;">Nguyễn Thị Y Ly</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 10.1736px; height: 36px;">&nbsp;</td>
+                    <td style="width: 10.1736px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">NT</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 10.1736px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">NT</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 45.625px; height: 36px;">21</td>
+                    <td style="width: 44.6007px; height: 36px;">&nbsp;</td>
+                    <td style="width: 45.7639px; height: 36px;">&nbsp;</td>
+                </tr>
+                <tr style="text-align: center;">
+                    <td style="width: 20.3125px; height: 36px;">9</td>
+                    <td style="width: 77.0139px; height: 36px;">Phan Thị Hoa</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 10.1736px; height: 36px;">&nbsp;</td>
+                    <td style="width: 10.1736px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 10.1736px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">NT</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 45.625px; height: 36px;">21</td>
+                    <td style="width: 44.6007px; height: 36px;">&nbsp;</td>
+                    <td style="width: 45.7639px; height: 36px;">&nbsp;</td>
+                </tr>
+                <tr style="text-align: center;">
+                    <td style="width: 20.3125px; height: 36px;">10</td>
+                    <td style="width: 77.0139px; height: 36px;">Nguyễn Thị Thảo</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 10.1736px; height: 36px;">&nbsp;</td>
+                    <td style="width: 10.1736px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 10.1736px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">NT</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">NT</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 20.3125px; height: 36px;">+</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 36px;">&nbsp;</td>
+                    <td style="width: 45.625px; height: 36px;">21</td>
+                    <td style="width: 44.6007px; height: 36px;">&nbsp;</td>
+                    <td style="width: 45.7639px; height: 36px;">&nbsp;</td>
+                </tr>
+                <tr style="text-align: center;">
+                    <td style="width: 102.639px; height: 18px;" colspan="2">Tổng</td>
+                    <td style="width: 20.3125px; height: 18px;">&nbsp;</td>
+                    <td style="width: 10.1736px; height: 18px;">&nbsp;</td>
+                    <td style="width: 10.1736px; height: 18px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 18px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 18px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 18px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 18px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 18px;">&nbsp;</td>
+                    <td style="width: 10.1736px; height: 18px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 18px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 18px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 18px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 18px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 18px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 18px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 18px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 18px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 18px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 18px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 18px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 18px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 18px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 18px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 18px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 18px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 18px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 18px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 18px;">&nbsp;</td>
+                    <td style="width: 20.3125px; height: 18px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 18px;">&nbsp;</td>
+                    <td style="width: 19.2882px; height: 18px;">&nbsp;</td>
+                    <td style="width: 45.625px; height: 18px;">&nbsp;</td>
+                    <td style="width: 44.6007px; height: 18px;">&nbsp;</td>
+                    <td style="width: 45.7639px; height: 18px;">&nbsp;</td>
                 </tr>
             </tbody>
         </table>
