@@ -8,6 +8,10 @@
         <servlet-name>overtimeSheet</servlet-name>
         <servlet-class>controller.overtimeSheet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>attendenceControleer</servlet-name>
+        <servlet-class>controller.attendenceControleer</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>timeSheetservlet</servlet-name>
         <url-pattern>/timeSheet</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>overtimeSheet</servlet-name>
         <url-pattern>/overtimeSheet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>attendenceControleer</servlet-name>
+        <url-pattern>/attendence</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

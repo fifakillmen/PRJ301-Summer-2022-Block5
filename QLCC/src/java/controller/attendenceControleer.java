@@ -4,19 +4,29 @@
  */
 package controller;
 
+import TimeHelper.HelpTime;
+import dal.AttendenceDBcontext;
+import dal.EmployeeDBcontex;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import model.Attendence;
+import model.Employee;
 
 import java.io.IOException;
-import java.io.PrintWriter;
+import java.text.ParseException;
+import java.time.Instant;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
  * @author fifak
  */
-public class overtimeSheet extends HttpServlet {
+public class attendenceControleer extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -29,19 +39,7 @@ public class overtimeSheet extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        try ( PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet overtimeSheet</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet overtimeSheet at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
-        }
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -56,16 +54,43 @@ public class overtimeSheet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-               request.getRequestDispatcher("View/overtimeSheet.jsp").forward(request, response);
+        Date today = new Date();
+        today = HelpTime.removeTime(today);
 
+        //int month = 7;
+        ArrayList<java.sql.Date> dates = null;
+        EmployeeDBcontex db = new EmployeeDBcontex();
+        ArrayList<Employee> employees = db.getEmployees(7, 2022);
+        int size = employees.size();
+        AttendenceDBcontext dbA = new AttendenceDBcontext();
+        ArrayList<Attendence> attendences = null;
+        try {
+            today = HelpTime.getDayoflastmonth(today);
+            dates = HelpTime.getDates(HelpTime.getDayoflastmonth(today));
+            attendences = dbA.getAttendences(HelpTime.getDayoflastmonth(today));
+            //month=HelpTime.getMonth(HelpTime.);
+            //int size = attendences.size();
+        } catch (ParseException ex) {
+            Logger.getLogger(attendenceControleer.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        request.setAttribute("dates", dates);
+        request.setAttribute("employees", employees);
+        request.setAttribute("attendences", attendences);
+        request.getRequestDispatcher("View/AttendenceSheet.jsp").forward(request, response);
     }
 
-   
+    /**
+     * Handles the HTTP <code>POST</code> method.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-                request.getRequestDispatcher("View/overtimeSheet.jsp").forward(request, response);
-
+        // processRequest(request, response);
     }
 
     /**
