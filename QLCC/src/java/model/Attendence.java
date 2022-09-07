@@ -4,6 +4,8 @@
  */
 package model;
 
+import java.sql.Date;
+
 /**
  *
  * @author fifak
@@ -14,15 +16,17 @@ public class Attendence {
     private Employee employee;
     private java.sql.Date day;
     private String conventionRoll;
+    private float amount_work;
 
     public Attendence() {
     }
 
-    public Attendence(int attendId, Employee employee, java.sql.Date day, String conventionRoll) {
+    public Attendence(int attendId, Employee employee, Date day, String conventionRoll, float amount_work) {
         this.attendId = attendId;
         this.employee = employee;
         this.day = day;
         this.conventionRoll = conventionRoll;
+        this.amount_work = amount_work;
     }
 
     public int getAttendId() {
@@ -41,11 +45,11 @@ public class Attendence {
         this.employee = employee;
     }
 
-    public java.sql.Date getDay() {
+    public Date getDay() {
         return day;
     }
 
-    public void setDay(java.sql.Date day) {
+    public void setDay(Date day) {
         this.day = day;
     }
 
@@ -55,6 +59,14 @@ public class Attendence {
 
     public void setConventionRoll(String conventionRoll) {
         this.conventionRoll = conventionRoll;
+    }
+
+    public float getAmount_work() {
+        return amount_work;
+    }
+
+    public void setAmount_work(float amount_work) {
+        this.amount_work = amount_work;
     }
 
 }

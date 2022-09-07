@@ -57,22 +57,21 @@ public class attendenceControleer extends HttpServlet {
         Date today = new Date();
         today = HelpTime.removeTime(today);
 
-        //int month = 7;
+        int month = 7;
+        int year = 2022;
         ArrayList<java.sql.Date> dates = null;
         EmployeeDBcontex db = new EmployeeDBcontex();
         ArrayList<Employee> employees = db.getEmployees(7, 2022);
         int size = employees.size();
         AttendenceDBcontext dbA = new AttendenceDBcontext();
-        ArrayList<Attendence> attendences = null;
-        try {
-            today = HelpTime.getDayoflastmonth(today);
-            dates = HelpTime.getDates(HelpTime.getDayoflastmonth(today));
-            attendences = dbA.getAttendences(HelpTime.getDayoflastmonth(today));
-            //month=HelpTime.getMonth(HelpTime.);
-            //int size = attendences.size();
-        } catch (ParseException ex) {
-            Logger.getLogger(attendenceControleer.class.getName()).log(Level.SEVERE, null, ex);
-        }
+
+        today = HelpTime.getDayoflastmonth(today);
+        dates = HelpTime.getDates(HelpTime.getDayoflastmonth(today));
+        ArrayList<Attendence> attendences = dbA.getAttendences(today);
+
+        request.setAttribute("stt", 0);
+        request.setAttribute("year", year);
+        request.setAttribute("month", month);
         request.setAttribute("dates", dates);
         request.setAttribute("employees", employees);
         request.setAttribute("attendences", attendences);

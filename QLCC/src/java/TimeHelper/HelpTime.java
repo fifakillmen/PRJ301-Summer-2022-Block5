@@ -12,6 +12,8 @@ import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -107,12 +109,17 @@ public class HelpTime {
         return new java.sql.Date(date.getTime());
     }
     
-    public static Date getDayoflastmonth(Date date) throws ParseException {
+    public static Date getDayoflastmonth(Date date)  {
         LocalDate localDate = date.toInstant()
                 .atZone(ZoneId.systemDefault())
                 .toLocalDate();
         localDate = localDate.minusMonths(1);
-        java.util.Date d = new SimpleDateFormat("yyyy-MM-dd").parse(localDate.toString());
+        java.util.Date d=null;
+        try {
+            d = new SimpleDateFormat("yyyy-MM-dd").parse(localDate.toString());
+        } catch (ParseException ex) {
+            Logger.getLogger(HelpTime.class.getName()).log(Level.SEVERE, null, ex);
+        }
         return d;
     }
     
