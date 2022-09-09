@@ -7,6 +7,7 @@ package controller;
 import TimeHelper.HelpTime;
 import dal.AttendenceDBcontext;
 import dal.EmployeeDBcontex;
+import dal.conventionAttendenceDBcontext;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -19,6 +20,7 @@ import java.text.ParseException;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -62,14 +64,13 @@ public class attendenceControleer extends HttpServlet {
         ArrayList<java.sql.Date> dates = null;
         EmployeeDBcontex db = new EmployeeDBcontex();
         ArrayList<Employee> employees = db.getEmployees(7, 2022);
-        int size = employees.size();
         AttendenceDBcontext dbA = new AttendenceDBcontext();
-
         today = HelpTime.getDayoflastmonth(today);
         dates = HelpTime.getDates(HelpTime.getDayoflastmonth(today));
         ArrayList<Attendence> attendences = dbA.getAttendences(today);
-
-        request.setAttribute("stt", 0);
+        conventionAttendenceDBcontext cdb = new conventionAttendenceDBcontext();
+        List<String> conventions = cdb.getConventionAttendence();
+        request.setAttribute("convention", conventions);
         request.setAttribute("year", year);
         request.setAttribute("month", month);
         request.setAttribute("dates", dates);

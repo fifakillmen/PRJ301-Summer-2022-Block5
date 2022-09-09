@@ -17,16 +17,18 @@ public class Attendence {
     private java.sql.Date day;
     private String conventionRoll;
     private float amount_work;
+    private boolean BHXH;
 
     public Attendence() {
     }
 
-    public Attendence(int attendId, Employee employee, Date day, String conventionRoll, float amount_work) {
+    public Attendence(int attendId, Employee employee, Date day, String conventionRoll, float amount_work, boolean BHXH) {
         this.attendId = attendId;
         this.employee = employee;
         this.day = day;
         this.conventionRoll = conventionRoll;
         this.amount_work = amount_work;
+        this.BHXH = BHXH;
     }
 
     public int getAttendId() {
@@ -67,6 +69,14 @@ public class Attendence {
 
     public void setAmount_work(float amount_work) {
         this.amount_work = amount_work;
+    }
+
+    public boolean isBHXH() {
+        return BHXH;
+    }
+
+    public void setBHXH(boolean BHXH) {
+        this.BHXH = BHXH;
     }
 
 }

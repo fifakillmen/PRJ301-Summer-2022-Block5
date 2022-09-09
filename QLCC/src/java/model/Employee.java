@@ -14,7 +14,7 @@ public class Employee {
 
     private String Erollnumber;
     private String fullname;
-    
+
     private ArrayList<Attendence> attendences = new ArrayList<>();
 
     public Employee() {
@@ -49,8 +49,32 @@ public class Employee {
         this.attendences = attendences;
     }
 
-    
+    public float getWorkTime() {
+        float total = 0;
+        for (Attendence a : attendences) {
+            total += a.getAmount_work();
+        }
+        return total;
+    }
 
-   
+    public float getNoWorkTime() {
+        float total = 0;
+        for (Attendence a : attendences) {
+            if (a.getAmount_work() == 0) {
+                total++;
+            }
+        }
+        return total;
+    }
+
+    public float getWorkBHXH() {
+        float total = 0;
+        for (Attendence a : attendences) {
+            if (a.isBHXH() == true) {
+                total++;
+            }
+        }
+        return total;
+    }
 
 }

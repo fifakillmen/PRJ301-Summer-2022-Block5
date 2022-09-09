@@ -20,25 +20,26 @@ import java.util.logging.Logger;
  * @author fifak
  */
 public class HelpTime {
-    
+
     public static int getDayOfMonth(Date datetime) {
         LocalDate localDate = datetime.toInstant()
                 .atZone(ZoneId.systemDefault())
                 .toLocalDate();
         return localDate.getDayOfMonth();
     }
-    
+
     public static Timestamp getTimeStamp(Date date) {
         return new Timestamp(date.getTime());
     }
-    
-    public static int getDayOfWeek(Date datetime) {
-        LocalDate localDate = datetime.toInstant()
+
+    public static int getDayOfWeek(java.sql.Date datetime) {
+        Date date = convertSqlDateToJavaDate(datetime);
+        LocalDate localDate = date.toInstant()
                 .atZone(ZoneId.systemDefault())
                 .toLocalDate();
         return localDate.getDayOfWeek().getValue();
     }
-    
+
     public static Date addDays(Date d, int days) {
         Calendar c = Calendar.getInstance();
         c.setTime(d);
@@ -46,7 +47,7 @@ public class HelpTime {
         Date newdate = c.getTime();
         return newdate;
     }
-    
+
     public static Date addMonths(Date d, int months) {
         Calendar c = Calendar.getInstance();
         c.setTime(d);
@@ -54,7 +55,7 @@ public class HelpTime {
         Date newdate = c.getTime();
         return newdate;
     }
-    
+
     public static Date removeTime(Date d) {
         Calendar c = Calendar.getInstance();
         c.setTime(d);
@@ -65,7 +66,7 @@ public class HelpTime {
         Date newdate = c.getTime();
         return newdate;
     }
-    
+
     public static ArrayList<java.sql.Date> getDates(Date date) {
         ArrayList<java.sql.Date> dates = new ArrayList<>();
         Calendar cal = Calendar.getInstance();
@@ -76,45 +77,50 @@ public class HelpTime {
         cal.set(Calendar.SECOND, 0);
         cal.set(Calendar.MILLISECOND, 0);
         cal.set(Calendar.DAY_OF_MONTH, 1);
-        
+
         int myMonth = cal.get(Calendar.MONTH);
-        
+
         while (myMonth == cal.get(Calendar.MONTH)) {
             dates.add(convertJavaDateToSqlDate(cal.getTime()));
             cal.add(Calendar.DAY_OF_MONTH, 1);
         }
-        
+
         return dates;
     }
-    
+
     public static Date getDateFrom(Timestamp ts) {
         return new Date(ts.getTime());
     }
-    
+
     public static int getYear(Date d) {
         Calendar cal = Calendar.getInstance();
         cal.setTime(d);
         int year = cal.get(Calendar.YEAR);
         return year;
     }
-    
+
     public static int getMonth(Date d) {
         Calendar cal = Calendar.getInstance();
         cal.setTime(d);
         int month = cal.get(Calendar.MONTH);
         return month;
     }
-    
+
     public static java.sql.Date convertJavaDateToSqlDate(java.util.Date date) {
         return new java.sql.Date(date.getTime());
     }
-    
-    public static Date getDayoflastmonth(Date date)  {
+
+    public static Date convertSqlDateToJavaDate(java.util.Date sqlDate) {
+        java.util.Date utilDate = new java.util.Date(sqlDate.getTime());
+        return utilDate;
+    }
+
+    public static Date getDayoflastmonth(Date date) {
         LocalDate localDate = date.toInstant()
                 .atZone(ZoneId.systemDefault())
                 .toLocalDate();
         localDate = localDate.minusMonths(1);
-        java.util.Date d=null;
+        java.util.Date d = null;
         try {
             d = new SimpleDateFormat("yyyy-MM-dd").parse(localDate.toString());
         } catch (ParseException ex) {
@@ -122,5 +128,5 @@ public class HelpTime {
         }
         return d;
     }
-    
+
 }

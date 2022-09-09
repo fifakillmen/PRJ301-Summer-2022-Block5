@@ -24,7 +24,6 @@
 
         <body>
         <tr align="center">
-
         <table class="table table-bordered table-striped" style="font-size: 12px; text-align:center ">
 
             <td rowspan="2"><span class="auto-style1"><strong>YEAR</strong></span>&nbsp;<select id="ctl00_mainContent_drpYear" name="year" >
@@ -41,7 +40,11 @@
                     &nbsp;
                     <option value="${requestScope.year+1}">${requestScope.year+1}</option>
                     <option value="${requestScope.year+2}">${requestScope.year+2}</option>
-                    &nbsp;</select><br />Month&nbsp;<select id="ctl00_mainContent_drpSelectWeek" name="ctl00$mainContent$drpSelectWeek" >
+                    &nbsp;
+            </select>
+            <br />
+
+            Month&nbsp;<select id="ctl00_mainContent_drpSelectWeek" name="ctl00$mainContent$drpSelectWeek" >
                 &nbsp;
                 <option value="01" 
                         <c:if test="${month eq 1}">
@@ -122,34 +125,55 @@
                 </tr>
 
                 <c:set var="count" value="0" scope="page" />
-
+                <c:set var="total" value="0" scope="page" />
                 <c:forEach items="${requestScope.employees}" var="e">
                     <c:set var="count" value="${count + 1}" scope="page"/>                    
                     <tr>
                         <td>${count}</td>
                         <td>${e.fullname}</td>
-                        <c:set var="count_work" value="0" scope="page" />
+
                         <c:forEach items="${requestScope.dates}" var="d">
-                            <td>
-                                <c:forEach items="${e.attendences}" var="a">
-                                    <c:if test="${d.time == a.day.time}">
-                                        ${a.amount_work}
-                                <c:set var="count_work" value="${count_work + a.amount_work}" scope="page"/>
+                            <td rowspan="2"
+                                <c:if test="${dt.getDayOfWeek(d) eq 6 or dt.getDayOfWeek(d) eq 7}">
+                                    style="background-color: yellow;"
+                                </c:if> ><span class="auto-style1"></span>
+                                <select id="ctl00_mainContent_drpConvention" name="convention">
 
-                                    </c:if>
-                                </c:forEach>
+                                    <c:forEach items="${requestScope.conventions}" var= "c">
+                                        <option 
+                                            <c:forEach items="${e.attendences}" var="a">
+                                                <c:if test="${d.time == a.day.time}">
+                                                    <c:if test="${a.conventionRoll eq c}">
+                                                        selected="selected"
+                                                    </c:if>
+                                                </c:if>
+                                            </c:forEach>
+                                            value="${c}">${c}</option>
+                                    </c:forEach>
+                                </select>
                             </td>
-
                         </c:forEach>
+                        <c:set var="total" value="${total+e.getWorkTime()}" scope ="page"></c:set>
 
-
-                        <td>
-                            ${count_work}
+                            <td>
+                            ${e.getWorkTime()}
                         </td>
-                        <td>1</td>
-                        <td>1</td>
+                        <td>
+                            <c:if test="${e.getNoWorkTime() != 0}">
+                                ${e.getNoWorkTime()}
+                            </c:if> 
+                        </td>
+                        <td>
+                            <c:if test="${e.getWorkBHXH() != 0}">
+                                ${e.getWorkBHXH()}
+                            </c:if> 
+                        </td>
                     </tr>
                 </c:forEach>
+                <tr>
+                    <td>Total:</td>
+                    <td>${total}</td>
+                </tr>
     </table>
 </table>
 </body>
