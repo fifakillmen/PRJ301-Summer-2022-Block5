@@ -21,14 +21,14 @@ public class conventionAttendenceDBcontext extends DBcontext {
 
     public List<String> getConventionAttendence() {
         List<String> allConvention = new ArrayList<>();
-        allConvention = null;
+        
         try {
             String sql = "Select conventionRoll,[name],amountWork,BHXH from conventionAttendence";
             PreparedStatement stm = connection.prepareStatement(sql);
             ResultSet rs = stm.executeQuery();
             while (rs.next()) {
                 if (!rs.getString("conventionRoll").isEmpty()) {
-                    allConvention.add(rs.getString("conventionRoll"));
+                    allConvention.add(rs.getString("conventionRoll").trim());
                 }
             }
             return allConvention;
