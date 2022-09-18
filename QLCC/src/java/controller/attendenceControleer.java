@@ -16,13 +16,9 @@ import model.Attendence;
 import model.Employee;
 
 import java.io.IOException;
-import java.text.ParseException;
-import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
@@ -90,7 +86,8 @@ public class attendenceControleer extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        // processRequest(request, response);
+        String 
+        
     }
 
     /**

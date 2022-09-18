@@ -52,7 +52,10 @@ public class Employee {
     public float getWorkTime() {
         float total = 0;
         for (Attendence a : attendences) {
-            total += a.getAmount_work();
+            if (a.isBHXH() != true) {
+                total += a.getAmount_work();
+            }
+            
         }
         return total;
     }
