@@ -88,21 +88,55 @@ public class HelpTime {
         return dates;
     }
 
+    public static ArrayList<java.sql.Date> getDatesWithMonthYear(int month, int year) {
+        String dt = year + "-" + month + "-01";
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        ArrayList<java.sql.Date> dates = new ArrayList<>();
+        Calendar cal = Calendar.getInstance();
+        try {
+            cal.setTime(sdf.parse(dt));
+        } catch (ParseException ex) {
+
+        }
+        cal.set(Calendar.HOUR_OF_DAY, 0);
+        cal.set(Calendar.HOUR, 0);
+        cal.set(Calendar.MINUTE, 0);
+        cal.set(Calendar.SECOND, 0);
+        cal.set(Calendar.MILLISECOND, 0);
+        cal.set(Calendar.DAY_OF_MONTH, 1);
+
+        int myMonth = cal.get(Calendar.MONTH);
+
+        while (myMonth == cal.get(Calendar.MONTH)) {
+            dates.add(convertJavaDateToSqlDate(cal.getTime()));
+            cal.add(Calendar.DAY_OF_MONTH, 1);
+        }
+
+        return dates;
+    }
+
     public static Date getDateFrom(Timestamp ts) {
         return new Date(ts.getTime());
     }
 
     public static int getYear(Date d) {
-        Calendar cal = Calendar.getInstance();
-        cal.setTime(d);
-        int year = cal.get(Calendar.YEAR);
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy");
+        int year = 0;
+        try {
+            year = Integer.parseInt(sdf.format(d));
+        } catch (Exception e) {
+        }
         return year;
+
     }
 
     public static int getMonth(Date d) {
-        Calendar cal = Calendar.getInstance();
-        cal.setTime(d);
-        int month = cal.get(Calendar.MONTH);
+        SimpleDateFormat sdf = new SimpleDateFormat("MM");
+        int month = 0;
+        try {
+            month = Integer.parseInt(sdf.format(d));
+        } catch (Exception e) {
+        }
         return month;
     }
 

@@ -14,6 +14,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
     <link rel="ultil" type="text/css" href="./css/ultil.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <jsp:useBean id="dt" class="TimeHelper.HelpTime" scope="request"></jsp:useBean>
         <!--===============================================================================================-->
@@ -22,111 +23,115 @@
 
 
         <div class="table100 ver2 m-b-110">
+
             <table data-vertable="ver2">
                 <thead>
                     <tr class="row100 head">
-                <form action="servlet/Date" method="post">  
-                    <th rowspan="2">
-                        <span class="auto-style1">
-                            <strong>YEAR</strong></span>
-                        &nbsp;
-                        <select id="ctl00_mainContent_drpYear" name="year" >
-                            <option value="${requestScope.year-3}">${requestScope.year-3}</option>
-                        &nbsp;
-                        <opftion value="${requestScope.year-2}">${requestScope.year-2}</option>
-                            &nbsp;
-                            <option value="${requestScope.year-1}">${requestScope.year-1}</option>
-                            &nbsp;
-                            <option selected="selected" value="${requestScope.year}">${requestScope.year}</option>
-                            &nbsp;
-                            <option value="${requestScope.year+1}">${requestScope.year+1}</option>
-                            <option value="${requestScope.year+2}">${requestScope.year+2}</option>
-                            &nbsp;
-                    </select>
 
-                    <br />MONTH&nbsp;<select id="ctl00_mainContent_drpSelectWeek" name="ctl00$mainContent$drpSelectWeek" >
-                        &nbsp;
-                        <option value="01" 
-                                <c:if test="${month eq 1}">
-                                    selected="selected"
-                                </c:if> >01</option>
-                        &nbsp;
-                        <option value="02"
-                                <c:if test="${month eq 2}">
-                                    selected="selected"
-                                </c:if>>02</option>
-                        &nbsp;
-                        <option value="03"
-                                <c:if test="${month eq 3}">
-                                    selected="selected"
-                                </c:if>>03</option>
-                        &nbsp;
-                        <option value="04"
-                                <c:if test="${month eq 4}">
-                                    selected="selected"
-                                </c:if>>04</option>
-                        &nbsp;
-                        <option value="05"
-                                <c:if test="${month eq 5}">
-                                    selected="selected"
-                                </c:if>>05</option>
-                        &nbsp;
-                        <option value="06"
-                                <c:if test="${month eq 6}">
-                                    selected="selected"
-                                </c:if>>06</option>
-                        &nbsp;
-                        <option value="07" 
-                                <c:if test="${month eq 7}">
-                                    selected="selected"
-                                </c:if>>07</option>
-                        &nbsp;
-                        <option value="08"
-                                <c:if test="${month eq 8}">
-                                    selected="selected"
-                                </c:if>>08</option>
-                        &nbsp;
-                        <option value="09"
-                                <c:if test="${month eq 9}">
-                                    selected="selected"
-                                </c:if>>09</option>
-                        &nbsp;
-                        <option value="10"
-                                <c:if test="${month eq 10}">
-                                    selected="selected"
-                                </c:if>>10</option>
-                        &nbsp;
-                        <option value="11"
-                                <c:if test="${month eq 11}">
-                                    selected="selected"
-                                </c:if>>11</option>
-                        &nbsp;
-                        <option value="12"
-                                <c:if test="${month eq 12}">
-                                    selected="selected"
-                                </c:if>>12</option>
-            </form>
-            <th colspan="36" width="1020"  >BẢNG CHẤM CÔNG</th>
-            <tr/>
-            </tr>
-            <tr class="row100 head">
-                <th class="column100 column1 " data-column="column1">TT</th>
-                <th class="column100 columnName " data-column="columnName">Họ Và Tên</th>
-                    <c:set var="countColum" value="2" scope="page" />
-                    <c:forEach items="${requestScope.dates}" var="d">
-                    <th class="column100 column${countColum+1}" data-column="column${countColum+1}">
-                        <c:set var="countColum" value="${countColum + 1}" scope="page"/>           
-                        <fmt:formatDate pattern = "EEE" 
-                                        value = "${d}" />
-                        <br/>
-                        <fmt:formatDate pattern = "dd" 
-                                        value = "${d}" /> </td>
+                        <th rowspan="2">
+                            <span class="auto-style1">
+                                <strong>YEAR</strong></span>
+                            &nbsp;
+                            <select class="drpSelectYear"  name="year" >
+                                <option value="${requestScope.year-3}">${requestScope.year-3}</option>
+                            &nbsp;
+                            <opftion value="${requestScope.year-2}">${requestScope.year-2}</option>
+                                &nbsp;
+                                <option value="${requestScope.year-1}">${requestScope.year-1}</option>
+                                &nbsp;
+                                <option selected="selected" value="${requestScope.year}">${requestScope.year}</option>
+                                &nbsp;
+                                <option value="${requestScope.year+1}">${requestScope.year+1}</option>
+                                <option value="${requestScope.year+2}">${requestScope.year+2}</option>
+                                &nbsp;
+                        </select>
 
-                    </c:forEach>
-                <th class="column100 column90" data-column="column90">SC hưởng lương</th>
-                <th class="column100 column91" data-column="column91">Nghỉ không lương</th>
-                <th class="column100 column92" data-column="column92">SC hưởng BHXH</th>
-            </tr>
+
+
+                        <br />MONTH&nbsp;<select class="drpSelectMonth"  name="drpSelectMonth"  >
+                            &nbsp;
+                            <option value="01" 
+                                    <c:if test="${month eq 1}">
+                                        selected="selected"
+                                    </c:if> >01</option>
+                            &nbsp;
+                            <option value="02"
+                                    <c:if test="${month eq 2}">
+                                        selected="selected"
+                                    </c:if>>02</option>
+                            &nbsp;
+                            <option value="03"
+                                    <c:if test="${month eq 3}">
+                                        selected="selected"
+                                    </c:if>>03</option>
+                            &nbsp;
+                            <option value="04"
+                                    <c:if test="${month eq 4}">
+                                        selected="selected"
+                                    </c:if>>04</option>
+                            &nbsp;
+                            <option value="05"
+                                    <c:if test="${month eq 5}">
+                                        selected="selected"
+                                    </c:if>>05</option>
+                            &nbsp;
+                            <option value="06"
+                                    <c:if test="${month eq 6}">
+                                        selected="selected"
+                                    </c:if>>06</option>
+                            &nbsp;
+                            <option value="07" 
+                                    <c:if test="${month eq 7}">
+                                        selected="selected"
+                                    </c:if>>07</option>
+                            &nbsp;
+                            <option value="08"
+                                    <c:if test="${month eq 8}">
+                                        selected="selected"
+                                    </c:if>>08</option>
+                            &nbsp;
+                            <option value="09"
+                                    <c:if test="${month eq 9}">
+                                        selected="selected"
+                                    </c:if>>09</option>
+                            &nbsp;
+                            <option value="10"
+                                    <c:if test="${month eq 10}">
+                                        selected="selected"
+                                    </c:if>>10</option>
+                            &nbsp;
+                            <option value="11"
+                                    <c:if test="${month eq 11}">
+                                        selected="selected"
+                                    </c:if>>11</option>
+                            &nbsp;
+                            <option value="12"
+                                    <c:if test="${month eq 12}">
+                                        selected="selected"
+                                    </c:if>>12</option>
+
+                            <th colspan="36" width="1020"  >BẢNG CHẤM CÔNG</th>
+                            <tr/>
+                </tr>
+
+                <tr class="row100 head">
+                    <th class="column100 column1 " data-column="column1">TT</th>
+                    <th class="column100 columnName " data-column="columnName">Họ Và Tên</th>
+                        <c:set var="countColum" value="2" scope="page" />
+                        <c:forEach items="${requestScope.dates}" var="d">
+                        <th class="column100 column${countColum+1}" data-column="column${countColum+1}">
+                            <c:set var="countColum" value="${countColum + 1}" scope="page"/>           
+                            <fmt:formatDate pattern = "EEE" 
+                                            value = "${d}" />
+                            <br/>
+                            <fmt:formatDate pattern = "dd" 
+                                            value = "${d}" /> </td>
+
+                        </c:forEach>
+                    <th class="column100 column90" data-column="column90">SC hưởng lương</th>
+                    <th class="column100 column91" data-column="column91">Nghỉ không lương</th>
+                    <th class="column100 column92" data-column="column92">SC hưởng BHXH</th>
+                </tr>
             </thead>
             <tbody>
 
@@ -180,6 +185,53 @@
 
             </tbody>
         </table>
+
     </div>
+    <script>
+        $(document).ready(
+                function () {
+                    $(".drpSelectYear").change(
+                            function () {
+                                var $option = $(".drpSelectYear").find('option:selected');
+                                var valueY = $option.val();
+                                //
+                                $option = $(".drpSelectMonth").find('option:selected');
+                                var valueM = $option.val();
+                                $.ajax({
+                                    url: '/QLCC/chaneMY',
+                                    type: 'GET',
+                                    data: {
+                                        year: valueY,
+                                        month: valueM
+                                    },
+                                    success: function (respone) {
+                                    }
+                                });
+                            });
+                });
+        $(document).ready(
+                function () {
+                    $(".drpSelectMonth").change(
+                            function () {
+                                var $option = $(".drpSelectYear").find('option:selected');
+                                var valueY = $option.val();
+                                //
+                                $option = $(".drpSelectMonth").find('option:selected');
+                                var valueM = $option.val();
+                                $.ajax({
+                                        url: '/QLCC/chaneMY',
+                                    type: 'GET',
+                                    data: {
+                                        year: valueY,
+                                        month: valueM
+                                    },
+                                    success: function (respone) {
+                                       // location.reload()
+                                    }
+                                });
+                            });
+                });
+
+    </script>
 </body>
 </html> 

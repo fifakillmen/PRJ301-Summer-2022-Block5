@@ -8,23 +8,25 @@ import TimeHelper.HelpTime;
 import dal.AttendenceDBcontext;
 import dal.EmployeeDBcontex;
 import dal.conventionAttendenceDBcontext;
+import java.io.IOException;
+import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import model.Attendence;
-import model.Employee;
-
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import model.Attendence;
+import model.Employee;
 
 /**
  *
  * @author fifak
  */
-public class attendenceControleer extends HttpServlet {
+@WebServlet(name = "attController", urlPatterns = {"/loadAtt"})
+public class attController extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -37,7 +39,19 @@ public class attendenceControleer extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
+        response.setContentType("text/html;charset=UTF-8");
+        try ( PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet attController</title>");
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Servlet attController at " + request.getContextPath() + "</h1>");
+            out.println("</body>");
+            out.println("</html>");
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -52,17 +66,16 @@ public class attendenceControleer extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+
         Date today = new Date();
         today = HelpTime.removeTime(today);
-
-        int month = 7;
-        int year = 2022;
-        ArrayList<java.sql.Date> dates = null;
+        int year = HelpTime.getYear(today);
+        int month = HelpTime.getMonth(today);
         EmployeeDBcontex db = new EmployeeDBcontex();
-        ArrayList<Employee> employees = db.getEmployees(7, 2022);
+        ArrayList<Employee> employees = db.getEmployees(month, year);
         AttendenceDBcontext dbA = new AttendenceDBcontext();
-        today = HelpTime.getDayoflastmonth(today);
-        dates = HelpTime.getDates(HelpTime.getDayoflastmonth(today));
+        ArrayList<java.sql.Date> dates = null;
+        dates = HelpTime.getDates(today);
         ArrayList<Attendence> attendences = dbA.getAttendences(today);
         conventionAttendenceDBcontext cdb = new conventionAttendenceDBcontext();
         List<String> conventions = cdb.getConventionAttendence();
@@ -72,7 +85,7 @@ public class attendenceControleer extends HttpServlet {
         request.setAttribute("dates", dates);
         request.setAttribute("employees", employees);
         request.setAttribute("attendences", attendences);
-        request.getRequestDispatcher("View/AttendenceSheet.jsp").forward(request, response);
+        request.getRequestDispatcher("./View/AttendenceSheet.jsp").forward(request, response);
     }
 
     /**
@@ -86,8 +99,7 @@ public class attendenceControleer extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String 
-        
+        processRequest(request, response);
     }
 
     /**
